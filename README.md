@@ -9,7 +9,7 @@ First clone the repository:
 
 ```$ cd verso_api```
 
-Create the local environment:
+Create the local environment (Python 3.12):
 
 ```$ python -m venv venv```
 
@@ -27,13 +27,21 @@ Run the tests:
 
 ```$ python manage.py test```
 
+Run local server:
+
+```$ python manage.py runserver```
+
+Local API docs:
+
+http://127.0.0.1:8000/api/schema/redoc/
+
 ## Data structures diagram
 
 Based on the task description, I'm considering that an Order has a quantity of the same product from one supplier. 
 
 For simplicity, I'm keeping the supplier name as an attribute in the Order table, and an Order can have many items (quantity attribute) of the same product.
 
-<img width="700" alt="Screenshot 2025-05-09 at 14 43 34" src="https://github.com/user-attachments/assets/5e3cfde6-1b08-44f2-8066-7f03b35cb835" />
+<img width="741" alt="Screenshot 2025-05-09 at 21 53 10" src="https://github.com/user-attachments/assets/276f1cc3-fb70-4803-a457-c424c0531d87" />
 
 ### Improvements
 There are two changes that I can see as potential improvements, but are out of the escope of the task:
