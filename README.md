@@ -26,3 +26,11 @@ Run the migrations:
 Run the tests:
 
 ```$ python manage.py test```
+
+## Data structures diagram:
+
+Based on the task description, I'm considering that an Order has a quantity of the same product from one supplier. 
+
+For simplicity, I'm keeping the supplier name as an attribute in the Order table, and an Order can have many items (quantity attribute) of the same product.
+
+<img width="700" alt="Screenshot 2025-05-09 at 14 43 34" src="https://github.com/user-attachments/assets/5e3cfde6-1b08-44f2-8066-7f03b35cb835" />
